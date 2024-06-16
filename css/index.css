@@ -52,6 +52,7 @@ a {
 p {
   font-size: 13.5px;
   letter-spacing: 2px;
+  line-height: 1.8;
   font-weight: 300;
   color: grey;
 }
@@ -81,6 +82,10 @@ p {
   margin: auto;
 }
 
+.nav_left img {
+  height: 40px;
+}
+
 .nav_right {
   display: flex;
   align-items: center;
@@ -108,6 +113,14 @@ p {
   color: var(--clr-white);
   text-transform: capitalize;
   background-color: var(--clr-sec-dark);
+}
+
+.menu_bar {
+  display: none;
+}
+
+.side_menu {
+  display: none;
 }
 
 .hero {
@@ -199,7 +212,7 @@ p {
 
 .card {
   width: 425px;
-  height: 193px;
+  /* height: 193px; */
   padding: 20px 30px;
   background-color: var(--clr-white);
   box-shadow: 2px 6px 13px 0px rgba(100, 100, 100, 0.53);
@@ -214,14 +227,12 @@ p {
 }
 
 .card_img_holder {
-  width: 40px;
-  height: 40px;
-  background-size: cover;
-  overflow: hidden;
+  width: 90px;
 }
 
 .card_img_holder img {
-  height: 40px;
+  height: 60px;
+  object-fit: contain;
 }
 
 .card_title {
@@ -343,7 +354,7 @@ p {
 
 .card_broad {
   width: 500px;
-  height: 200px;
+  min-height: 200px;
   position: relative;
   padding: 20px 30px 20px 60px;
   background-color: var(--clr-white);
@@ -459,9 +470,10 @@ button {
 
 .footer_heading {
   font-family: var(--ff-sec);
-  font-size: 14;
+  font-size: 16px;
   font-weight: 500;
   color: var(--clr-grey-dark);
+  margin-bottom: 8px;
 }
 
 .footer_sub_content {
@@ -490,6 +502,10 @@ footer p {
   background-color: var(--clr-sec-dark);
 }
 
+.footer_logo img {
+  height: 40px;
+}
+
 hr {
   border: none;
   height: 1px;
@@ -500,6 +516,10 @@ hr {
 .copyright {
   margin-top: 20px;
   text-align: center;
+}
+
+.show_links {
+  display: flex;
 }
 
 /* For Mobile Devices – 320px — 480px.
@@ -528,10 +548,38 @@ Large screens and Desktops – 1025px — 1200px. */
   }
 } */
 
+@media screen and (max-width: 1390px) {
+  .nav {
+    max-width: 95vw;
+    padding-inline: 3rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .container {
     width: 95vw;
     padding: 4rem 1rem;
+  }
+
+  .nav {
+    max-width: 95vw;
+    padding-inline: 1rem;
+  }
+
+  .menus {
+    gap: 25px;
+  }
+
+  .menu_sign_up {
+    margin-left: 30px;
+  }
+
+  .side_menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .hero {
@@ -563,8 +611,8 @@ Large screens and Desktops – 1025px — 1200px. */
   }
 
   /* .section_one {
-    padding-top: 50px;
-  } */
+            padding-top: 50px;
+        } */
 
   .card_broads {
     flex-direction: column;
@@ -580,11 +628,47 @@ Large screens and Desktops – 1025px — 1200px. */
     max-width: 350px;
   }
 
+  /* .form {
+    margin-inline: 10px;
+  } */
+
   .footer_menu {
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .nav_right {
+    display: none;
   }
 
-  form {
-    margin-inline: 30px;
+  .menu_sign_up {
+    display: none;
+  }
+
+  .menu_bar {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .card {
+    width: 330px;
+  }
+
+  .card_broad {
+    width: 300px;
+    /* padding: 20px 30px 20px 50px; */
+  }
+
+  .card_small {
+    width: 80px;
+    height: 80px;
+  }
+
+  .form {
+    width: 350px;
+    margin: auto;
   }
 }

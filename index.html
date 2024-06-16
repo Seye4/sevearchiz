@@ -14,10 +14,12 @@
   </head>
   <body>
     <nav class="nav">
-      <!-- <div class="menu_bar">menu</div> -->
-      <div class="nav_left">logo</div>
-      <!-- <div class="nav_right">
-        <ul class="menus">
+      <div class="nav_left">
+        <img src="./assets/logo.png" alt="" />
+      </div>
+      <div class="menu_bar" id="menu_bar"><i class="fa-solid fa-bars"></i></div>
+      <div class="nav_right">
+        <ul class="menus" id="menus">
           <li><a href="#home">home</a></li>
           <li><a href="#service">services</a></li>
           <li><a href="#about-us">about</a></li>
@@ -25,8 +27,17 @@
           <li><a href="#footer">contact</a></li>
         </ul>
         <a href="#subscribe" class="menu_sign_up">sign up</a>
-      </div> -->
+      </div>
     </nav>
+    <div class="side_links" id="side_links">
+      <ul class="menus side_menu" id="side_menu">
+        <li><a class="scroll_link" href="#home">home</a></li>
+        <li><a class="scroll_link" href="#service">services</a></li>
+        <li><a class="scroll_link" href="#about-us">about</a></li>
+        <li><a class="scroll_link" href="#project">project</a></li>
+        <li><a class="scroll_link" href="#footer">contact</a></li>
+      </ul>
+    </div>
 
     <!-- hero section -->
     <main class="main" id="home">
@@ -68,7 +79,7 @@
           <!-- card -->
           <div class="card">
             <div class="card_img_holder">
-              <img src="assets/noun-interior-design-5695446.png" alt="" />
+              <img src="assets/design-thinking-icon.png" alt="" />
             </div>
             <div class="card_msg">
               <h5 class="card_title">interior design</h5>
@@ -82,10 +93,10 @@
           <!-- card -->
           <div class="card">
             <div class="card_img_holder">
-              <img src="assets/noun-interior-design-5695446.png" alt="" />
+              <img src="assets/architectural-icon.png" alt="" />
             </div>
             <div class="card_msg">
-              <h5 class="card_title">interior design</h5>
+              <h5 class="card_title">Architecture</h5>
               <p class="card_info">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
                 deserunt debitis ipsa numquam.
@@ -96,10 +107,10 @@
           <!-- card -->
           <div class="card">
             <div class="card_img_holder">
-              <img src="assets/noun-interior-design-5695446.png" alt="" />
+              <img src="assets/business-plan-icon.png" alt="" />
             </div>
             <div class="card_msg">
-              <h5 class="card_title">interior design</h5>
+              <h5 class="card_title">Planning</h5>
               <p class="card_info">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
                 deserunt debitis ipsa numquam.
@@ -116,18 +127,10 @@
     <section class="about_us" id="about-us">
       <div class="container">
         <div class="hero">
-          <div class="hero_img_holder">
-            <img
-              class="hero_img"
-              src="https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg"
-              alt="hero-img"
-            />
-          </div>
           <div class="hero_msg">
             <p class="hero_title">About Us</p>
             <h1 class="hero_heading">
-              Interioris The Will <br />
-              of An Epoch Mextreo
+              Interior is The Will of An Epoch Mextreo
             </h1>
             <p class="hero-p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
@@ -135,6 +138,13 @@
               temporibus quas maxime molestiae repellat assumenda.
             </p>
             <a class="btn hero-btn" href="#contact">Learn more</a>
+          </div>
+          <div class="hero_img_holder">
+            <img
+              class="hero_img"
+              src="https://cdn.pixabay.com/photo/2016/09/19/17/20/home-1680800_1280.jpg"
+              alt="about img"
+            />
           </div>
         </div>
       </div>
@@ -151,8 +161,8 @@
         <div class="timeline_up">
           <div class="cards_small">
             <div class="card_small">
-              <h3>980</h3>
-              <p>Project</p>
+              <h3>630</h3>
+              <p>Happy Client</p>
             </div>
           </div>
         </div>
@@ -167,16 +177,16 @@
         <div class="timeline_up">
           <div class="cards_small card_top">
             <div class="card_small">
-              <h3>980</h3>
-              <p>Project</p>
+              <h3>580</h3>
+              <p>Winners</p>
             </div>
           </div>
         </div>
         <div class="timeline_half">
           <div class="card_end">
             <div class="card_small">
-              <h3>980</h3>
-              <p>Project</p>
+              <h3>610</h3>
+              <p>Referer</p>
             </div>
           </div>
         </div>
@@ -217,7 +227,7 @@
           <div class="card_broad">
             <div class="card_broad_img_holder">
               <img
-                src="https://cdn.pixabay.com/photo/2022/12/24/21/14/portrait-7676482_640.jpg"
+                src="https://cdn.pixabay.com/photo/2016/11/22/21/42/woman-1850703_1280.jpg"
                 alt=""
               />
             </div>
@@ -240,7 +250,7 @@
           <div class="card_broad">
             <div class="card_broad_img_holder">
               <img
-                src="https://cdn.pixabay.com/photo/2022/12/24/21/14/portrait-7676482_640.jpg"
+                src="https://cdn.pixabay.com/photo/2016/11/29/06/25/beard-1867788_1280.jpg"
                 alt=""
               />
             </div>
@@ -274,6 +284,7 @@
         Find out early about all upcoming promotions and new product releases
         with our newsletter.
       </p>
+
       <form class="form" action="" method="post">
         <input
           type="email"
@@ -290,12 +301,8 @@
     <footer class="footer" id="footer">
       <div class="container">
         <ul class="footer_menu">
-          <li>
-            LOGO
-            <p class="footer_sub_content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              dolor unde consectetur similique, nisi obcaecati!
-            </p>
+          <li class="footer_logo">
+            <img src="/assets/logo.png" alt="Logo image" />
           </li>
 
           <li>
@@ -315,12 +322,11 @@
           </li>
           <li>
             <h4 class="footer_heading">Contact Us</h4>
-            <div class="footer_sub_content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                aperiam non officiis.
-              </p>
-            </div>
+            <p class="footer_sub_content">
+              3239 Shinn Street, New York, 10007 <br />
+              <span> <i class="fa-solid fa-phone"></i> </span>
+              212-766-7934
+            </p>
           </li>
           <li>
             <h4 class="footer_heading">Follow Us</h4>
@@ -362,7 +368,10 @@
           </li>
         </ul>
         <hr />
-        <p class="copyright">Copyright @ 2020 made with love from seve</p>
+        <p class="copyright">
+          Copyright @ <span id="date"> 2020</span> made with love from
+          SeveArchiviz
+        </p>
       </div>
     </footer>
     <!-- End of Footer section -->
