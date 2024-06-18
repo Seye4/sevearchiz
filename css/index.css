@@ -252,6 +252,7 @@ p {
 
 .card:hover {
   background-color: var(--clr-grey-light);
+  box-shadow: var(--light-shadow);
 }
 
 .card_img_holder {
@@ -391,6 +392,11 @@ p {
   gap: 20px;
   border-radius: var(--radius);
   margin-bottom: 40px;
+  transition: var(--transition);
+}
+
+.card_broad:hover {
+  box-shadow: var(--dark-shadow);
 }
 
 .card_broad_title {
@@ -408,12 +414,15 @@ p {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: yellow;
   transform: translateY(-50%);
   font-size: 55px;
   line-height: 0;
   font-family: var(--ff-ter);
   color: var(--clr-sec-dark);
+}
+
+.quote {
+  margin-bottom: 0;
 }
 
 .card_broad_img_holder {
